@@ -1,0 +1,41 @@
+{
+  "name": "pi-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "built": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xckai/pi-dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xckai/pi-dashboard/issues"
+  },
+  "homepage": "https://github.com/xckai/pi-dashboard#readme",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^1.0.1",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1"
+  }
+}
