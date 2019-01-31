@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 6rem;
+  align-items: center;
+  width: 8rem;
 
   .icon {
     width: 6rem;
@@ -11,19 +12,39 @@
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    background: rgba(128, 128, 128, 0.603);
+    background: rgba(128, 128, 128, 0.3);
+    img {
+      transition: all 0.2s;
+      width: 3rem;
+      height: 3rem;
+    }
     span {
+      transition: all 0.5s;
       font-size: 400%;
       font-weight: 900;
       opacity: 0.8;
       color: green;
     }
   }
-
   .title {
     margin-top: 0.5rem;
     font-size: 120%;
     text-align: center;
     width: 100%;
+    text-overflow: ellipsis;
   }
+  &:hover {
+    .icon {
+      img {
+        transition: width 1s ease-in-out;
+        transition: height 1s ease-in-out;
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+      span {
+        font-size: 450%;
+      }
+    }
+  }
+  cursor: pointer;
 }

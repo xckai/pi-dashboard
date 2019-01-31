@@ -2,6 +2,8 @@ import React from "react";
 import Bar from "./Bar";
 import { WebContainer } from "./WebContainer";
 import style from "./APP.less";
+import { BrowserRouter } from "react-router-dom";
+import { Main } from "./MainPage";
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -9,10 +11,12 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
-        <Bar title="Rasperry Pi - Dashboard" />
-        <WebContainer apps={this.state.apps} />
-      </div>
+      <BrowserRouter>
+        <div>
+          <Bar title="Rasperry Pi - Dashboard" />
+          <Main />
+        </div>
+      </BrowserRouter>
     );
   }
 }
