@@ -5,7 +5,8 @@ module.exports = {
   mode: "development",
   entry: {
     main: "./src/main.js",
-    style: "./src/style.less"
+    style: "./src/style.less",
+    config: './src/config.json'
   },
   devtool: "inline-source-map",
   devServer: {
@@ -32,6 +33,10 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
+        use: ["file-loader"]
+      },
+      {
+        test: /\.(json))$/,
         use: ["file-loader"]
       },
       {
